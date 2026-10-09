@@ -40,9 +40,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Books
+  - Art
+  - Hat
   - 
   m_SortingLayers:
   - name: UI
