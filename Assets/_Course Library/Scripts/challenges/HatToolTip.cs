@@ -29,6 +29,8 @@ public class HatTooltip : MonoBehaviour
     bool isHeld;
     bool isWorn;
 
+    Vector3 tooltipWorldPosition;
+
     void Awake()
     {
         grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -61,6 +63,9 @@ public class HatTooltip : MonoBehaviour
 
     void OnGrabbed(SelectEnterEventArgs args)
     {
+
+        tooltipWorldPosition = tooltipCanvas.transform.position;
+
         // A socket is also an "interactor", so check which one grabbed us
         if (args.interactorObject is UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor)
             isWorn = true;
@@ -93,12 +98,7 @@ public class HatTooltip : MonoBehaviour
             SetStage(next);
     }
 
-    void LateUpdate()
-    {
-        // Keep the tooltip floating above the hat
-        if (tooltipCanvas.activeSelf)
-            tooltipCanvas.transform.position = transform.position + offset;
-    }
+    
 
     void SetStage(Stage stage)
     {
