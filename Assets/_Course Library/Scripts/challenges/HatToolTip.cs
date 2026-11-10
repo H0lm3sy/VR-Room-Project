@@ -1,49 +1,29 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-// XRI 3.x only, add these two lines:
-// using UnityEngine.XR.Interaction.Toolkit.Interactables;
-// using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using TMPro;
+using UnityEngine.XR.Interaction.Toolkit.Interactables; 
 
 public class HatTooltip : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] GameObject tooltipCanvas;
-    [SerializeField] TMP_Text messageText;
+    [SerializeField] XRGrabInteractable hat;
+    [SerializeField] GameObject tooltipRoot;   // the world-space canvas
+    [SerializeField] TMP_Text label;
+    [SerializeField] Transform head;           // Main Camera
+    [SerializeField] float wornDistance = 0.25f;
 
-    [Header("Settings")]
-    [SerializeField] float showDistance = 1.5f;
-    [SerializeField] Vector3 offset = new Vector3(0, 0.3f, 0);
+    const string SeenKey = "HatTooltipSeen";
 
-    [Header("Messages")]
-    [SerializeField] string pickUpMessage = "Grab the hat\n(hold the Grip button)";
-    [SerializeField] string wearMessage = "Now put it on your head!";
-
-    const string PrefKey = "Tooltip_Hat_Completed";
-
-    enum Stage { Hidden, PickUp, PutOnHead, Done }
-
-    UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grab;
-    Transform cam;
-    Stage current = Stage.Hidden;
-    bool isHeld;
-    bool isWorn;
-
-    Vector3 tooltipWorldPosition;
+    enum Stage { Hidden, Grab, BringToHead, Done }
+    Stage stage = Stage.Hidden;
 
     void Awake()
     {
-        grab = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        cam = Camera.main.transform;
-    }
-
-    void Start()
-    {
-        // First-time-only: skip everything if already completed
-        if (PlayerPrefs.GetInt(PrefKey, 0) == 1)
+        // Bonus: only show the first time
+        if (PlayerPrefs.GetInt(SeenKey, 0) == 1)
         {
+            tooltipRoot.SetActive(false);
             enabled = false;
-            tooltipCanvas.SetActive(false);
             return;
         }
         SetStage(Stage.Hidden);
@@ -51,88 +31,89 @@ public class HatTooltip : MonoBehaviour
 
     void OnEnable()
     {
-        grab.selectEntered.AddListener(OnGrabbed);
-        grab.selectExited.AddListener(OnReleased);
+        hat.hoverEntered.AddListener(OnHoverEnter);
+        hat.hoverExited.AddListener(OnHoverExit);
+        hat.selectEntered.AddListener(OnGrab);
+        hat.selectExited.AddListener(OnRelease);
     }
 
     void OnDisable()
     {
-        grab.selectEntered.RemoveListener(OnGrabbed);
-        grab.selectExited.RemoveListener(OnReleased);
+        hat.hoverEntered.RemoveListener(OnHoverEnter);
+        hat.hoverExited.RemoveListener(OnHoverExit);
+        hat.selectEntered.RemoveListener(OnGrab);
+        hat.selectExited.RemoveListener(OnRelease);
     }
 
-    void OnGrabbed(SelectEnterEventArgs args)
+    void OnHoverEnter(HoverEnterEventArgs _)
     {
+        if (stage == Stage.Hidden) SetStage(Stage.Grab);
+    }
 
-        tooltipWorldPosition = tooltipCanvas.transform.position;
+    void OnHoverExit(HoverExitEventArgs _)
+    {
+        if (stage == Stage.Grab && !hat.isSelected) SetStage(Stage.Hidden);
+    }
 
-        // A socket is also an "interactor", so check which one grabbed us
-        if (args.interactorObject is UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor)
-            isWorn = true;
+    void OnGrab(SelectEnterEventArgs _)
+    {
+        if (stage != Stage.Done) SetStage(Stage.BringToHead);
+    }
+
+    void OnRelease(SelectExitEventArgs _)
+    {
+        if (stage == Stage.Done) return;
+
+        if (IsOnHead())
+            StartCoroutine(Complete());
         else
-            isHeld = true;
+            SetStage(Stage.Hidden); // dropped it elsewhere
     }
 
-    void OnReleased(SelectExitEventArgs args)
+    bool IsOnHead()
     {
-        if (args.interactorObject is UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor)
-            isWorn = false;
-        else
-            isHeld = false;
+        // Hat roughly at head height and close to the camera
+        return Vector3.Distance(hat.transform.position, head.position) < wornDistance;
     }
 
-    void Update()
+    IEnumerator Complete()
     {
-        // Decide which stage we should be in
-        Stage next;
-        if (isWorn)
-            next = Stage.Done;
-        else if (isHeld)
-            next = Stage.PutOnHead;
-        else if (Vector3.Distance(cam.position, transform.position) < showDistance)
-            next = Stage.PickUp;
-        else
-            next = Stage.Hidden;
-
-        if (next != current)
-            SetStage(next);
+        stage = Stage.Done;
+        tooltipRoot.SetActive(true);
+        label.text = "Nice hat!";
+        PlayerPrefs.SetInt(SeenKey, 1);
+        PlayerPrefs.Save();
+        yield return new WaitForSeconds(2f);
+        tooltipRoot.SetActive(false);
+        enabled = false;
     }
 
-    
-
-    void SetStage(Stage stage)
+    void SetStage(Stage s)
     {
-        current = stage;
-
-        switch (stage)
+        stage = s;
+        switch (s)
         {
             case Stage.Hidden:
-                tooltipCanvas.SetActive(false);
+                tooltipRoot.SetActive(false);
                 break;
-
-            case Stage.PickUp:
-                messageText.text = pickUpMessage;
-                tooltipCanvas.SetActive(true);
+            case Stage.Grab:
+                tooltipRoot.SetActive(true);
+                label.text = "Squeeze the grip button to pick up the hat";
                 break;
-
-            case Stage.PutOnHead:
-                messageText.text = wearMessage;
-                tooltipCanvas.SetActive(true);
-                break;
-
-            case Stage.Done:
-                tooltipCanvas.SetActive(false);
-                PlayerPrefs.SetInt(PrefKey, 1);
-                PlayerPrefs.Save();
-                enabled = false; // stop checking
+            case Stage.BringToHead:
+                tooltipRoot.SetActive(true);
+                label.text = "Now bring it to your head and let go";
                 break;
         }
     }
 
-    [ContextMenu("Reset Tooltip Progress")]
-    void ResetProgress()
+    void LateUpdate()
     {
-        PlayerPrefs.DeleteKey(PrefKey);
-        Debug.Log("Hat tooltip progress reset.");
+        // Billboard: make the tooltip face the player
+        if (tooltipRoot.activeSelf)
+        {
+            Vector3 dir = tooltipRoot.transform.position - head.position;
+            tooltipRoot.transform.rotation = Quaternion.LookRotation(dir);
+        }
     }
 }
