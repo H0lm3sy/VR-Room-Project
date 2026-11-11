@@ -1,0 +1,128 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/pine_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.6114, 2.8495, 0.5961)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.3490, 4.6960, 0.4030)
+
+[sub_resource type="BoxShape3D" id="box1_1"]
+size = Vector3(2.6040, 1.1950, 2.2440)
+
+[sub_resource type="BoxShape3D" id="box1_2"]
+size = Vector3(2.1750, 1.1570, 2.1720)
+
+[sub_resource type="BoxShape3D" id="box1_3"]
+size = Vector3(1.7060, 0.8960, 0.6780)
+
+[sub_resource type="BoxShape3D" id="box1_4"]
+size = Vector3(4.9150, 1.0750, 2.9820)
+
+[sub_resource type="BoxShape3D" id="box1_5"]
+size = Vector3(1.8070, 1.1590, 2.1290)
+
+[sub_resource type="BoxShape3D" id="box1_6"]
+size = Vector3(2.0990, 1.1890, 3.2530)
+
+[sub_resource type="BoxShape3D" id="box1_7"]
+size = Vector3(3.4520, 1.2680, 3.3620)
+
+[sub_resource type="BoxShape3D" id="box1_8"]
+size = Vector3(2.2760, 1.1890, 2.6370)
+
+[sub_resource type="BoxShape3D" id="box1_9"]
+size = Vector3(0.6810, 1.1950, 1.3340)
+
+[sub_resource type="BoxShape3D" id="box1_10"]
+size = Vector3(3.9880, 2.3200, 4.0300)
+
+[sub_resource type="BoxShape3D" id="box1_11"]
+size = Vector3(1.0000, 0.9930, 0.5590)
+
+[sub_resource type="BoxShape3D" id="box1_12"]
+size = Vector3(0.5690, 1.1590, 1.3040)
+
+[sub_resource type="BoxShape3D" id="box1_13"]
+size = Vector3(0.5690, 1.0440, 0.7860)
+
+[sub_resource type="BoxShape3D" id="box1_14"]
+size = Vector3(2.8150, 2.2790, 2.6210)
+
+[sub_resource type="BoxShape3D" id="box1_15"]
+size = Vector3(1.6020, 4.2870, 1.9490)
+
+[node name="pine" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="pine"]
+
+[node name="Box" type="CollisionShape3D" parent="pine/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.3224, -0.0156)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="pine/pine_crown"]
+
+[node name="Box" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0173, 1.9150, 0.0531)
+shape = SubResource("box1")
+
+[node name="Box2" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3752, -1.6295, -1.1584)
+shape = SubResource("box1_1")
+
+[node name="Box3" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1607, -0.4625, -0.7944)
+shape = SubResource("box1_2")
+
+[node name="Box4" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8242, -1.4800, -0.1314)
+shape = SubResource("box1_3")
+
+[node name="Box5" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2197, -1.5695, 1.1896)
+shape = SubResource("box1_4")
+
+[node name="Box6" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9037, -0.4635, 1.0281)
+shape = SubResource("box1_5")
+
+[node name="Box7" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9763, -0.4785, 0.6511)
+shape = SubResource("box1_6")
+
+[node name="Box8" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4888, -1.6660, -0.5994)
+shape = SubResource("box1_7")
+
+[node name="Box9" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3628, -0.4785, -1.3549)
+shape = SubResource("box1_8")
+
+[node name="Box10" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1417, -1.6295, -1.6134)
+shape = SubResource("box1_9")
+
+[node name="Box11" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2412, 1.1480, 0.0146)
+shape = SubResource("box1_10")
+
+[node name="Box12" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2872, -0.3805, 0.1101)
+shape = SubResource("box1_11")
+
+[node name="Box13" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0617, -0.4635, 1.3936)
+shape = SubResource("box1_12")
+
+[node name="Box14" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0617, 0.6380, 0.3566)
+shape = SubResource("box1_13")
+
+[node name="Box15" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1767, 2.3165, -0.1149)
+shape = SubResource("box1_14")
+
+[node name="Box16" type="CollisionShape3D" parent="pine/pine_crown/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0508, 3.7235, -0.1419)
+shape = SubResource("box1_15")

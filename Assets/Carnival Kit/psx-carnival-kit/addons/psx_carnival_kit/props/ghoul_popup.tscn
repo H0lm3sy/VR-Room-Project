@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/ghoul_popup_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.8000, 0.5000, 0.8000)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.6951, 1.3240, 0.9770)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(0.1200, 0.0300, 0.0200)
+
+[node name="ghoul_popup" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+run = "lunge"
+lit = PackedStringArray("ghoul_popup_eyes")
+
+[node name="Collision" type="StaticBody3D" parent="ghoul_popup"]
+
+[node name="Box" type="CollisionShape3D" parent="ghoul_popup/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.2500, -0.2000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="ghoul_popup/ghoul_popup_body"]
+
+[node name="Box" type="CollisionShape3D" parent="ghoul_popup/ghoul_popup_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0021, 0.6620, 0.3953)
+shape = SubResource("box1")
+
+[node name="Collision" type="StaticBody3D" parent="ghoul_popup/ghoul_popup_body/ghoul_popup_eyes"]
+
+[node name="Box" type="CollisionShape3D" parent="ghoul_popup/ghoul_popup_body/ghoul_popup_eyes/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.6500, 0.1600)
+shape = SubResource("box2")

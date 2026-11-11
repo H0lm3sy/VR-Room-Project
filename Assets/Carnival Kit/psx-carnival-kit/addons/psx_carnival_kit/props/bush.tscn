@@ -1,0 +1,119 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/bush_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.6830, 0.1420, 0.9810)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(0.9420, 1.0180, 1.4900)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(1.0060, 0.7610, 0.4530)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(0.3910, 1.0210, 0.8530)
+
+[sub_resource type="BoxShape3D" id="box0_4"]
+size = Vector3(0.5740, 0.4350, 0.4760)
+
+[sub_resource type="BoxShape3D" id="box0_5"]
+size = Vector3(0.4480, 0.9520, 0.5140)
+
+[sub_resource type="BoxShape3D" id="box0_6"]
+size = Vector3(0.8100, 0.5310, 0.2520)
+
+[sub_resource type="BoxShape3D" id="box0_7"]
+size = Vector3(1.3170, 0.4140, 0.6860)
+
+[sub_resource type="BoxShape3D" id="box0_8"]
+size = Vector3(0.2210, 0.4500, 0.5430)
+
+[sub_resource type="BoxShape3D" id="box0_9"]
+size = Vector3(0.8900, 0.3100, 0.8550)
+
+[sub_resource type="BoxShape3D" id="box0_10"]
+size = Vector3(0.9280, 0.3630, 0.6770)
+
+[sub_resource type="BoxShape3D" id="box0_11"]
+size = Vector3(0.4150, 0.4670, 1.0690)
+
+[sub_resource type="BoxShape3D" id="box0_12"]
+size = Vector3(0.5610, 0.6700, 0.6060)
+
+[sub_resource type="BoxShape3D" id="box0_13"]
+size = Vector3(0.3330, 0.3680, 0.4770)
+
+[sub_resource type="BoxShape3D" id="box0_14"]
+size = Vector3(0.5100, 0.5790, 0.6320)
+
+[sub_resource type="BoxShape3D" id="box0_15"]
+size = Vector3(0.5320, 0.2620, 0.5830)
+
+[node name="bush" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="bush"]
+
+[node name="Box" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2085, -0.0680, 0.1015)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2110, 0.1930, -0.2310)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1850, 0.2025, 0.4895)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5465, 0.3815, 0.1715)
+shape = SubResource("box0_3")
+
+[node name="Box5" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3630, 0.1435, -0.3900)
+shape = SubResource("box0_4")
+
+[node name="Box6" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3200, 0.3510, 0.3700)
+shape = SubResource("box0_5")
+
+[node name="Box7" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2830, 0.6265, 0.5010)
+shape = SubResource("box0_6")
+
+[node name="Box8" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0085, 0.5680, -0.3360)
+shape = SubResource("box0_7")
+
+[node name="Box9" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4345, 0.5860, -0.0295)
+shape = SubResource("box0_8")
+
+[node name="Box10" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0130, 0.8590, 0.0645)
+shape = SubResource("box0_9")
+
+[node name="Box11" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0130, -0.2835, -0.3275)
+shape = SubResource("box0_10")
+
+[node name="Box12" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2965, -0.1045, -0.2505)
+shape = SubResource("box0_11")
+
+[node name="Box13" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2235, 0.3230, -0.0190)
+shape = SubResource("box0_12")
+
+[node name="Box14" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3375, 0.3130, -0.5465)
+shape = SubResource("box0_13")
+
+[node name="Box15" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5640, 0.2125, 0.2490)
+shape = SubResource("box0_14")
+
+[node name="Box16" type="CollisionShape3D" parent="bush/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3450, 0.5270, 0.1645)
+shape = SubResource("box0_15")

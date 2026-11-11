@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/ferris_wheel_ring_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[node name="ferris_wheel_ring" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+run = "turn"
+lit = PackedStringArray("ferris_wheel_ring_bulbs")

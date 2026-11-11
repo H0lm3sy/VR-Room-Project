@@ -1,0 +1,76 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/lamp_carnival_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1400, 4.5000, 0.1400)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(0.3600, 0.1500, 0.3600)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(0.7000, 0.1600, 0.7000)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(0.2000, 0.3400, 0.2000)
+
+[sub_resource type="BoxShape3D" id="box0_4"]
+size = Vector3(0.0300, 0.2800, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box0_5"]
+size = Vector3(0.4500, 0.2400, 0.0100)
+
+[sub_resource type="BoxShape3D" id="box0_6"]
+size = Vector3(0.2400, 0.0240, 0.0240)
+
+[sub_resource type="BoxShape3D" id="box0_7"]
+size = Vector3(0.0240, 4.3000, 0.0240)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.6100, 0.0700, 0.6100)
+
+[node name="lamp_carnival" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+lit = PackedStringArray("lamp_carnival_bulbs")
+
+[node name="Collision" type="StaticBody3D" parent="lamp_carnival"]
+
+[node name="Box" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.2500, -0.0000)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0750, -0.0000)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.5800, -0.0000)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.8300, -0.0000)
+shape = SubResource("box0_3")
+
+[node name="Box5" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 5.1200, -0.0000)
+shape = SubResource("box0_4")
+
+[node name="Box6" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2250, 5.2600, -0.0000)
+shape = SubResource("box0_5")
+
+[node name="Box7" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.0000, -0.0000)
+shape = SubResource("box0_6")
+
+[node name="Box8" type="CollisionShape3D" parent="lamp_carnival/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.2500, -0.0800)
+shape = SubResource("box0_7")
+
+[node name="Collision" type="StaticBody3D" parent="lamp_carnival/lamp_carnival_bulbs"]
+
+[node name="Box" type="CollisionShape3D" parent="lamp_carnival/lamp_carnival_bulbs/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.5000, -0.0000)
+shape = SubResource("box1")

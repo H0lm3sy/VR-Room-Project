@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/candy_scatter_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.3018, 0.0217, 0.3138)
+
+[node name="candy_scatter" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "candy_scatter"
+title = "Dropped Candy"
+text = "A handful of sweets, dropped by someone running away."
+
+[node name="Collision" type="StaticBody3D" parent="candy_scatter"]
+
+[node name="Box" type="CollisionShape3D" parent="candy_scatter/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0074, 0.0098, -0.0051)
+shape = SubResource("box0")

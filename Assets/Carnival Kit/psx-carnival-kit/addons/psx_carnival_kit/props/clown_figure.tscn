@@ -1,0 +1,141 @@
+[gd_scene load_steps=21 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/clown_figure_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.9400, 0.4020, 0.9400)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.3300, 0.2400, 0.2120)
+
+[sub_resource type="BoxShape3D" id="box1_1"]
+size = Vector3(0.3600, 0.5050, 0.2120)
+
+[sub_resource type="BoxShape3D" id="box1_2"]
+size = Vector3(0.1260, 0.3310, 0.1160)
+
+[sub_resource type="BoxShape3D" id="box1_3"]
+size = Vector3(0.0950, 0.2800, 0.0800)
+
+[sub_resource type="BoxShape3D" id="box1_4"]
+size = Vector3(0.0920, 0.1870, 0.0890)
+
+[sub_resource type="BoxShape3D" id="box1_5"]
+size = Vector3(0.1460, 0.4300, 0.1760)
+
+[sub_resource type="BoxShape3D" id="box1_6"]
+size = Vector3(0.0900, 0.4150, 0.1240)
+
+[sub_resource type="BoxShape3D" id="box1_7"]
+size = Vector3(0.0880, 0.0810, 0.2450)
+
+[sub_resource type="BoxShape3D" id="box1_8"]
+size = Vector3(0.1260, 0.1680, 0.3260)
+
+[sub_resource type="BoxShape3D" id="box1_9"]
+size = Vector3(0.0950, 0.0800, 0.2800)
+
+[sub_resource type="BoxShape3D" id="box1_10"]
+size = Vector3(0.0800, 0.0900, 0.1880)
+
+[sub_resource type="BoxShape3D" id="box1_11"]
+size = Vector3(0.0480, 0.0240, 0.0740)
+
+[sub_resource type="BoxShape3D" id="box1_12"]
+size = Vector3(0.1460, 0.4300, 0.1760)
+
+[sub_resource type="BoxShape3D" id="box1_13"]
+size = Vector3(0.0900, 0.4150, 0.1240)
+
+[sub_resource type="BoxShape3D" id="box1_14"]
+size = Vector3(0.0880, 0.0810, 0.2450)
+
+[sub_resource type="BoxShape3D" id="box1_15"]
+size = Vector3(0.3400, 0.1000, 0.3240)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(0.1811, 0.5345, 0.2535)
+
+[node name="clown_figure" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+run = "turn"
+
+[node name="Collision" type="StaticBody3D" parent="clown_figure"]
+
+[node name="Box" type="CollisionShape3D" parent="clown_figure/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.2010, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="clown_figure/clown_figure_body"]
+
+[node name="Box" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.3100, -0.0040)
+shape = SubResource("box1")
+
+[node name="Box2" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.6525, 0.0060)
+shape = SubResource("box1_1")
+
+[node name="Box3" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1970, 1.6985, -0.0000)
+shape = SubResource("box1_2")
+
+[node name="Box4" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2355, 1.4220, -0.0000)
+shape = SubResource("box1_3")
+
+[node name="Box5" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2570, 1.2015, -0.0075)
+shape = SubResource("box1_4")
+
+[node name="Box6" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0980, 1.0850, -0.0000)
+shape = SubResource("box1_5")
+
+[node name="Box7" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0940, 0.6925, -0.0060)
+shape = SubResource("box1_6")
+
+[node name="Box8" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0940, 0.4635, 0.0675)
+shape = SubResource("box1_7")
+
+[node name="Box9" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1970, 1.7940, 0.1250)
+shape = SubResource("box1_8")
+
+[node name="Box10" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2355, 1.7510, 0.3930)
+shape = SubResource("box1_9")
+
+[node name="Box11" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2630, 1.7430, 0.6140)
+shape = SubResource("box1_10")
+
+[node name="Box12" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2330, 1.7720, 0.5900)
+shape = SubResource("box1_11")
+
+[node name="Box13" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0980, 1.0850, -0.0000)
+shape = SubResource("box1_12")
+
+[node name="Box14" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0940, 0.6925, -0.0060)
+shape = SubResource("box1_13")
+
+[node name="Box15" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0940, 0.4635, 0.0675)
+shape = SubResource("box1_14")
+
+[node name="Box16" type="CollisionShape3D" parent="clown_figure/clown_figure_body/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.8600, -0.0000)
+shape = SubResource("box1_15")
+
+[node name="Collision" type="StaticBody3D" parent="clown_figure/clown_figure_body/clown_figure_head"]
+
+[node name="Box" type="CollisionShape3D" parent="clown_figure/clown_figure_body/clown_figure_head/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0372, 0.2186, 0.0407)
+shape = SubResource("box2")

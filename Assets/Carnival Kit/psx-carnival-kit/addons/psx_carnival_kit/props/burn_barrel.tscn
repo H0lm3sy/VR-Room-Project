@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/burn_barrel_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.6000, 0.8800, 0.5840)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.3809, 0.4540, 0.3378)
+
+[node name="burn_barrel" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+on = true
+run = "burn"
+lit = PackedStringArray("burn_barrel_lamp_fire")
+
+[node name="Collision" type="StaticBody3D" parent="burn_barrel"]
+
+[node name="Box" type="CollisionShape3D" parent="burn_barrel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.4400, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="burn_barrel/burn_barrel_lamp_fire"]
+
+[node name="Box" type="CollisionShape3D" parent="burn_barrel/burn_barrel_lamp_fire/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0096, 1.0130, 0.0167)
+shape = SubResource("box1")

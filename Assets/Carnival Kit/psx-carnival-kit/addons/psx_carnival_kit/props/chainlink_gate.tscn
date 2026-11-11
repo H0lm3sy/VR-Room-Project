@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/chainlink_gate_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.0700, 2.1000, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(0.0900, 0.0500, 0.0780)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(0.0700, 2.1000, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(0.0900, 0.0500, 0.0780)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(2.4125, 1.9356, 0.0800)
+
+[node name="chainlink_gate" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "switch"
+clip = "open"
+
+[node name="Collision" type="StaticBody3D" parent="chainlink_gate"]
+
+[node name="Box" type="CollisionShape3D" parent="chainlink_gate/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2500, 1.0500, -0.0000)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="chainlink_gate/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2500, 2.1250, -0.0000)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="chainlink_gate/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2500, 1.0500, -0.0000)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="chainlink_gate/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2500, 2.1250, -0.0000)
+shape = SubResource("box0_3")
+
+[node name="Collision" type="StaticBody3D" parent="chainlink_gate/chainlink_gate_leaf"]
+
+[node name="Box" type="CollisionShape3D" parent="chainlink_gate/chainlink_gate_leaf/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1862, 0.9978, 0.0200)
+shape = SubResource("box1")

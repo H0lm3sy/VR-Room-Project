@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/box_truck_rusted_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(2.1800, 2.2520, 6.8000)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(1.9400, 0.1498, 1.2341)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(0.9850, 1.6500, 0.0800)
+
+[sub_resource type="BoxShape3D" id="box3"]
+size = Vector3(0.9850, 1.6500, 0.0800)
+
+[sub_resource type="BoxShape3D" id="box4"]
+size = Vector3(0.1980, 1.5680, 0.9620)
+
+[sub_resource type="BoxShape3D" id="box5"]
+size = Vector3(0.1980, 1.5680, 0.9620)
+
+[sub_resource type="BoxShape3D" id="box6"]
+size = Vector3(0.2000, 0.7160, 0.7608)
+
+[sub_resource type="BoxShape3D" id="box7"]
+size = Vector3(0.2000, 0.7160, 0.7608)
+
+[sub_resource type="BoxShape3D" id="box8"]
+size = Vector3(0.2000, 0.7160, 0.7608)
+
+[sub_resource type="BoxShape3D" id="box9"]
+size = Vector3(0.2000, 0.7160, 0.7608)
+
+[node name="box_truck_rusted" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.5340, -0.0100)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_hood"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_hood/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, -0.0749, 0.6230)
+shape = SubResource("box1")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_door_back_left"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_door_back_left/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4925, 0.8350, 0.0200)
+shape = SubResource("box2")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_door_back_right"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_door_back_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4925, 0.8350, 0.0200)
+shape = SubResource("box3")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_door_left"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_door_left/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0310, 0.7840, -0.4750)
+shape = SubResource("box4")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_door_right"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_door_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0310, 0.7840, -0.4750)
+shape = SubResource("box5")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_wheel_front_left"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_wheel_front_left/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, -0.0000)
+shape = SubResource("box6")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_wheel_front_right"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_wheel_front_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, -0.0000)
+shape = SubResource("box7")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_wheel_rear_left"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_wheel_rear_left/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, -0.0000)
+shape = SubResource("box8")
+
+[node name="Collision" type="StaticBody3D" parent="box_truck_rusted/box_truck_rusted_wheel_rear_right"]
+
+[node name="Box" type="CollisionShape3D" parent="box_truck_rusted/box_truck_rusted_wheel_rear_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, -0.0000)
+shape = SubResource("box9")

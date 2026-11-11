@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/ghost_train_front_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(1.3000, 4.2000, 0.3400)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(1.3000, 4.2000, 0.3400)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(2.6000, 4.2000, 0.3400)
+
+[sub_resource type="BoxShape3D" id="box3"]
+size = Vector3(5.4000, 1.8000, 0.8645)
+
+[sub_resource type="BoxShape3D" id="box4"]
+size = Vector3(8.5000, 2.3000, 0.2600)
+
+[sub_resource type="BoxShape3D" id="box5"]
+size = Vector3(1.3600, 2.3600, 0.0500)
+
+[sub_resource type="BoxShape3D" id="box6"]
+size = Vector3(1.3600, 2.3600, 0.0500)
+
+[node name="ghost_train_front" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+clip = "open"
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3500, 2.1000, 0.0200)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_right"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3500, 2.1000, 0.0200)
+shape = SubResource("box1")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_middle"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_middle/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.1000, 0.0200)
+shape = SubResource("box2")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_lintels"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_lintels/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 3.3000, 0.2823)
+shape = SubResource("box3")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_board"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_board/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 5.3500, 0.0300)
+shape = SubResource("box4")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_door_l"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_door_l/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7000, 1.2000, -0.0000)
+shape = SubResource("box5")
+
+[node name="Collision" type="StaticBody3D" parent="ghost_train_front/ghost_train_front_door_r"]
+
+[node name="Box" type="CollisionShape3D" parent="ghost_train_front/ghost_train_front_door_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7000, 1.2000, -0.0000)
+shape = SubResource("box6")

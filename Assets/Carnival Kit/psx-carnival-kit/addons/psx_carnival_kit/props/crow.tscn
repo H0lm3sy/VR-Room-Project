@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/crow_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1078, 0.1942, 0.3039)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0600, 0.0621, 0.1321)
+
+[node name="crow" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="crow"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0975, -0.0514)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_head"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_head/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0181, 0.0551)
+shape = SubResource("box1")

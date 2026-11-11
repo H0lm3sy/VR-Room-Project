@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/trash_can_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.5500, 0.7000, 0.4946)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.5400, 0.1250, 0.5136)
+
+[node name="trash_can" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "switch"
+clip = "open"
+
+[node name="Collision" type="StaticBody3D" parent="trash_can"]
+
+[node name="Box" type="CollisionShape3D" parent="trash_can/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.3500, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="trash_can/trash_can_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="trash_can/trash_can_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0625, -0.0000)
+shape = SubResource("box1")

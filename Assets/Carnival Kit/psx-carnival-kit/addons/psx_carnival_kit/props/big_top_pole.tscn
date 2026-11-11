@@ -1,0 +1,132 @@
+[gd_scene load_steps=20 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/big_top_pole_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.3200, 9.9000, 0.3200)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(1.1590, 0.1500, 1.1740)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(0.4680, 0.1300, 0.3460)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(0.5570, 0.1300, 1.0660)
+
+[sub_resource type="BoxShape3D" id="box0_4"]
+size = Vector3(0.4850, 0.1300, 0.4760)
+
+[sub_resource type="BoxShape3D" id="box0_5"]
+size = Vector3(0.3460, 0.1300, 0.4680)
+
+[sub_resource type="BoxShape3D" id="box0_6"]
+size = Vector3(0.4780, 0.1300, 0.3720)
+
+[sub_resource type="BoxShape3D" id="box0_7"]
+size = Vector3(0.5460, 0.0500, 0.5200)
+
+[sub_resource type="BoxShape3D" id="box0_8"]
+size = Vector3(0.4000, 0.0440, 0.3900)
+
+[sub_resource type="BoxShape3D" id="box0_9"]
+size = Vector3(0.4000, 0.0440, 0.3900)
+
+[sub_resource type="BoxShape3D" id="box0_10"]
+size = Vector3(0.4260, 6.3000, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box0_11"]
+size = Vector3(2.6000, 0.1200, 0.1200)
+
+[sub_resource type="BoxShape3D" id="box0_12"]
+size = Vector3(0.2400, 0.3170, 0.2980)
+
+[sub_resource type="BoxShape3D" id="box0_13"]
+size = Vector3(0.2400, 0.3170, 0.2980)
+
+[sub_resource type="BoxShape3D" id="box0_14"]
+size = Vector3(0.2400, 0.3170, 0.2980)
+
+[sub_resource type="BoxShape3D" id="box0_15"]
+size = Vector3(0.2400, 0.3170, 0.2980)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(2.5600, 0.1600, 0.1600)
+
+[node name="big_top_pole" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+lit = PackedStringArray("big_top_pole_lamps")
+
+[node name="Collision" type="StaticBody3D" parent="big_top_pole"]
+
+[node name="Box" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.9500, -0.0000)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1795, 0.0750, 0.1710)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1330, 0.0700, -0.5850)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4805, 0.0700, -0.1170)
+shape = SubResource("box0_3")
+
+[node name="Box5" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4075, 0.2000, -0.4400)
+shape = SubResource("box0_4")
+
+[node name="Box6" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5850, 0.2000, -0.1330)
+shape = SubResource("box0_5")
+
+[node name="Box7" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1770, 0.2000, 0.5730)
+shape = SubResource("box0_6")
+
+[node name="Box8" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7500, 0.0290, 0.5500)
+shape = SubResource("box0_7")
+
+[node name="Box9" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.0000, -0.0000)
+shape = SubResource("box0_8")
+
+[node name="Box10" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.0000, -0.0000)
+shape = SubResource("box0_9")
+
+[node name="Box11" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 3.3500, 0.1800)
+shape = SubResource("box0_10")
+
+[node name="Box12" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 6.2000, -0.0000)
+shape = SubResource("box0_11")
+
+[node name="Box13" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2000, 6.0515, 0.0450)
+shape = SubResource("box0_12")
+
+[node name="Box14" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6000, 6.0515, 0.0450)
+shape = SubResource("box0_13")
+
+[node name="Box15" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6000, 6.0515, 0.0450)
+shape = SubResource("box0_14")
+
+[node name="Box16" type="CollisionShape3D" parent="big_top_pole/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2000, 6.0515, 0.0450)
+shape = SubResource("box0_15")
+
+[node name="Collision" type="StaticBody3D" parent="big_top_pole/big_top_pole_lamps"]
+
+[node name="Box" type="CollisionShape3D" parent="big_top_pole/big_top_pole_lamps/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 5.9700, 0.1100)
+shape = SubResource("box1")

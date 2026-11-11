@@ -1,0 +1,1660 @@
+[gd_scene load_steps=233 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/carousel_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.6800, 0.3400, 4.7500)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(0.7910, 0.3400, 1.0090)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(1.0090, 0.3400, 0.7910)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(4.7500, 0.3400, 0.6800)
+
+[sub_resource type="BoxShape3D" id="box0_4"]
+size = Vector3(1.0090, 0.3400, 0.7910)
+
+[sub_resource type="BoxShape3D" id="box0_5"]
+size = Vector3(0.7910, 0.3400, 1.0090)
+
+[sub_resource type="BoxShape3D" id="box0_6"]
+size = Vector3(0.6800, 0.3400, 4.7500)
+
+[sub_resource type="BoxShape3D" id="box0_7"]
+size = Vector3(0.7910, 0.3400, 1.0090)
+
+[sub_resource type="BoxShape3D" id="box0_8"]
+size = Vector3(1.0090, 0.3400, 0.7910)
+
+[sub_resource type="BoxShape3D" id="box0_9"]
+size = Vector3(1.1590, 0.3400, 0.5180)
+
+[sub_resource type="BoxShape3D" id="box0_10"]
+size = Vector3(2.4580, 0.3400, 0.2100)
+
+[sub_resource type="BoxShape3D" id="box0_11"]
+size = Vector3(1.1590, 0.3400, 0.5180)
+
+[sub_resource type="BoxShape3D" id="box0_12"]
+size = Vector3(1.0090, 0.3400, 0.7910)
+
+[sub_resource type="BoxShape3D" id="box0_13"]
+size = Vector3(0.7910, 0.3400, 1.0090)
+
+[sub_resource type="BoxShape3D" id="box0_14"]
+size = Vector3(9.0800, 0.0200, 9.4000)
+
+[sub_resource type="BoxShape3D" id="box0_15"]
+size = Vector3(9.4000, 0.0200, 9.4000)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.1000, 2.6600, 0.7500)
+
+[sub_resource type="BoxShape3D" id="box1_1"]
+size = Vector3(0.2750, 2.6500, 0.2750)
+
+[sub_resource type="BoxShape3D" id="box1_2"]
+size = Vector3(0.7500, 2.6500, 0.1000)
+
+[sub_resource type="BoxShape3D" id="box1_3"]
+size = Vector3(0.2750, 2.6500, 0.2750)
+
+[sub_resource type="BoxShape3D" id="box1_4"]
+size = Vector3(0.1000, 2.6600, 0.7500)
+
+[sub_resource type="BoxShape3D" id="box1_5"]
+size = Vector3(0.2750, 2.6500, 0.2750)
+
+[sub_resource type="BoxShape3D" id="box1_6"]
+size = Vector3(0.7500, 2.6500, 0.1000)
+
+[sub_resource type="BoxShape3D" id="box1_7"]
+size = Vector3(0.2750, 2.6500, 0.2750)
+
+[sub_resource type="BoxShape3D" id="box1_8"]
+size = Vector3(1.3000, 0.0200, 1.5000)
+
+[sub_resource type="BoxShape3D" id="box1_9"]
+size = Vector3(1.7000, 0.0220, 1.7000)
+
+[sub_resource type="BoxShape3D" id="box1_10"]
+size = Vector3(0.1140, 0.2120, 0.8500)
+
+[sub_resource type="BoxShape3D" id="box1_11"]
+size = Vector3(1.4720, 0.2020, 0.4250)
+
+[sub_resource type="BoxShape3D" id="box1_12"]
+size = Vector3(0.1140, 0.2120, 0.8500)
+
+[sub_resource type="BoxShape3D" id="box1_13"]
+size = Vector3(1.4720, 0.2020, 0.3110)
+
+[sub_resource type="BoxShape3D" id="box1_14"]
+size = Vector3(0.8500, 0.2020, 0.1140)
+
+[sub_resource type="BoxShape3D" id="box1_15"]
+size = Vector3(1.4720, 0.0200, 1.7000)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(9.9000, 3.3500, 9.9000)
+
+[sub_resource type="BoxShape3D" id="box3"]
+size = Vector3(9.6600, 0.5400, 9.6600)
+
+[sub_resource type="BoxShape3D" id="box4"]
+size = Vector3(0.3800, 2.6500, 1.7171)
+
+[sub_resource type="BoxShape3D" id="box5"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box5_1"]
+size = Vector3(0.2890, 0.3800, 0.2900)
+
+[sub_resource type="BoxShape3D" id="box5_2"]
+size = Vector3(0.2720, 0.2960, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box5_3"]
+size = Vector3(0.6080, 0.1060, 0.6070)
+
+[sub_resource type="BoxShape3D" id="box5_4"]
+size = Vector3(0.2480, 0.2960, 0.2710)
+
+[sub_resource type="BoxShape3D" id="box5_5"]
+size = Vector3(0.6080, 0.0760, 0.6070)
+
+[sub_resource type="BoxShape3D" id="box5_6"]
+size = Vector3(0.2540, 0.2960, 0.2660)
+
+[sub_resource type="BoxShape3D" id="box5_7"]
+size = Vector3(0.2670, 0.2960, 0.2540)
+
+[sub_resource type="BoxShape3D" id="box5_8"]
+size = Vector3(0.4660, 0.4580, 0.4630)
+
+[sub_resource type="BoxShape3D" id="box5_9"]
+size = Vector3(0.3030, 0.6000, 0.3030)
+
+[sub_resource type="BoxShape3D" id="box5_10"]
+size = Vector3(0.3560, 0.3990, 0.3560)
+
+[sub_resource type="BoxShape3D" id="box5_11"]
+size = Vector3(0.2470, 0.2240, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box5_12"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box5_13"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box5_14"]
+size = Vector3(0.2190, 0.4400, 0.2190)
+
+[sub_resource type="BoxShape3D" id="box5_15"]
+size = Vector3(0.2690, 0.0800, 0.2690)
+
+[sub_resource type="BoxShape3D" id="box6"]
+size = Vector3(1.7171, 2.6500, 0.3800)
+
+[sub_resource type="BoxShape3D" id="box7"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box7_1"]
+size = Vector3(0.2900, 0.3800, 0.2890)
+
+[sub_resource type="BoxShape3D" id="box7_2"]
+size = Vector3(0.2470, 0.2960, 0.2720)
+
+[sub_resource type="BoxShape3D" id="box7_3"]
+size = Vector3(0.6070, 0.1060, 0.6080)
+
+[sub_resource type="BoxShape3D" id="box7_4"]
+size = Vector3(0.2710, 0.2960, 0.2480)
+
+[sub_resource type="BoxShape3D" id="box7_5"]
+size = Vector3(0.6070, 0.0760, 0.6080)
+
+[sub_resource type="BoxShape3D" id="box7_6"]
+size = Vector3(0.2660, 0.2960, 0.2540)
+
+[sub_resource type="BoxShape3D" id="box7_7"]
+size = Vector3(0.2540, 0.2960, 0.2670)
+
+[sub_resource type="BoxShape3D" id="box7_8"]
+size = Vector3(0.4630, 0.4580, 0.4660)
+
+[sub_resource type="BoxShape3D" id="box7_9"]
+size = Vector3(0.3030, 0.6000, 0.3030)
+
+[sub_resource type="BoxShape3D" id="box7_10"]
+size = Vector3(0.3560, 0.3990, 0.3560)
+
+[sub_resource type="BoxShape3D" id="box7_11"]
+size = Vector3(0.2470, 0.2240, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box7_12"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box7_13"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box7_14"]
+size = Vector3(0.2190, 0.4400, 0.2190)
+
+[sub_resource type="BoxShape3D" id="box7_15"]
+size = Vector3(0.2690, 0.0800, 0.2690)
+
+[sub_resource type="BoxShape3D" id="box8"]
+size = Vector3(0.3800, 2.6500, 1.7171)
+
+[sub_resource type="BoxShape3D" id="box9"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box9_1"]
+size = Vector3(0.2890, 0.3800, 0.2900)
+
+[sub_resource type="BoxShape3D" id="box9_2"]
+size = Vector3(0.2720, 0.2960, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box9_3"]
+size = Vector3(0.6080, 0.1060, 0.6070)
+
+[sub_resource type="BoxShape3D" id="box9_4"]
+size = Vector3(0.2480, 0.2960, 0.2710)
+
+[sub_resource type="BoxShape3D" id="box9_5"]
+size = Vector3(0.6080, 0.0760, 0.6070)
+
+[sub_resource type="BoxShape3D" id="box9_6"]
+size = Vector3(0.2540, 0.2960, 0.2660)
+
+[sub_resource type="BoxShape3D" id="box9_7"]
+size = Vector3(0.2670, 0.2960, 0.2540)
+
+[sub_resource type="BoxShape3D" id="box9_8"]
+size = Vector3(0.4660, 0.4580, 0.4630)
+
+[sub_resource type="BoxShape3D" id="box9_9"]
+size = Vector3(0.3030, 0.6000, 0.3030)
+
+[sub_resource type="BoxShape3D" id="box9_10"]
+size = Vector3(0.3560, 0.3990, 0.3560)
+
+[sub_resource type="BoxShape3D" id="box9_11"]
+size = Vector3(0.2470, 0.2240, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box9_12"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box9_13"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box9_14"]
+size = Vector3(0.2190, 0.4400, 0.2190)
+
+[sub_resource type="BoxShape3D" id="box9_15"]
+size = Vector3(0.2690, 0.0800, 0.2690)
+
+[sub_resource type="BoxShape3D" id="box10"]
+size = Vector3(1.7171, 2.6500, 0.3800)
+
+[sub_resource type="BoxShape3D" id="box11"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box11_1"]
+size = Vector3(0.2900, 0.3800, 0.2890)
+
+[sub_resource type="BoxShape3D" id="box11_2"]
+size = Vector3(0.2470, 0.2960, 0.2720)
+
+[sub_resource type="BoxShape3D" id="box11_3"]
+size = Vector3(0.6070, 0.1060, 0.6080)
+
+[sub_resource type="BoxShape3D" id="box11_4"]
+size = Vector3(0.2710, 0.2960, 0.2480)
+
+[sub_resource type="BoxShape3D" id="box11_5"]
+size = Vector3(0.6070, 0.0760, 0.6080)
+
+[sub_resource type="BoxShape3D" id="box11_6"]
+size = Vector3(0.2660, 0.2960, 0.2540)
+
+[sub_resource type="BoxShape3D" id="box11_7"]
+size = Vector3(0.2540, 0.2960, 0.2670)
+
+[sub_resource type="BoxShape3D" id="box11_8"]
+size = Vector3(0.4630, 0.4580, 0.4660)
+
+[sub_resource type="BoxShape3D" id="box11_9"]
+size = Vector3(0.3030, 0.6000, 0.3030)
+
+[sub_resource type="BoxShape3D" id="box11_10"]
+size = Vector3(0.3560, 0.3990, 0.3560)
+
+[sub_resource type="BoxShape3D" id="box11_11"]
+size = Vector3(0.2470, 0.2240, 0.2470)
+
+[sub_resource type="BoxShape3D" id="box11_12"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box11_13"]
+size = Vector3(0.1630, 0.6400, 0.1630)
+
+[sub_resource type="BoxShape3D" id="box11_14"]
+size = Vector3(0.2190, 0.4400, 0.2190)
+
+[sub_resource type="BoxShape3D" id="box11_15"]
+size = Vector3(0.2690, 0.0800, 0.2690)
+
+[sub_resource type="BoxShape3D" id="box12"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box12_1"]
+size = Vector3(0.2930, 0.3800, 0.2440)
+
+[sub_resource type="BoxShape3D" id="box12_2"]
+size = Vector3(0.1810, 0.2960, 0.3070)
+
+[sub_resource type="BoxShape3D" id="box12_3"]
+size = Vector3(0.4880, 0.1060, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box12_4"]
+size = Vector3(0.1500, 0.2960, 0.3200)
+
+[sub_resource type="BoxShape3D" id="box12_5"]
+size = Vector3(0.4470, 0.0760, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box12_6"]
+size = Vector3(0.1600, 0.2960, 0.3170)
+
+[sub_resource type="BoxShape3D" id="box12_7"]
+size = Vector3(0.1750, 0.2960, 0.3110)
+
+[sub_resource type="BoxShape3D" id="box12_8"]
+size = Vector3(0.4070, 0.4580, 0.4530)
+
+[sub_resource type="BoxShape3D" id="box12_9"]
+size = Vector3(0.2410, 0.6000, 0.3500)
+
+[sub_resource type="BoxShape3D" id="box12_10"]
+size = Vector3(0.2620, 0.3990, 0.3940)
+
+[sub_resource type="BoxShape3D" id="box12_11"]
+size = Vector3(0.2620, 0.2240, 0.2040)
+
+[sub_resource type="BoxShape3D" id="box12_12"]
+size = Vector3(0.1320, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box12_13"]
+size = Vector3(0.1330, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box12_14"]
+size = Vector3(0.1620, 0.4400, 0.2760)
+
+[sub_resource type="BoxShape3D" id="box12_15"]
+size = Vector3(0.3080, 0.0800, 0.1890)
+
+[sub_resource type="BoxShape3D" id="box13"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box13_1"]
+size = Vector3(0.2440, 0.3800, 0.2920)
+
+[sub_resource type="BoxShape3D" id="box13_2"]
+size = Vector3(0.3200, 0.2960, 0.1500)
+
+[sub_resource type="BoxShape3D" id="box13_3"]
+size = Vector3(0.6750, 0.1060, 0.4870)
+
+[sub_resource type="BoxShape3D" id="box13_4"]
+size = Vector3(0.3070, 0.2960, 0.1810)
+
+[sub_resource type="BoxShape3D" id="box13_5"]
+size = Vector3(0.6750, 0.0760, 0.4470)
+
+[sub_resource type="BoxShape3D" id="box13_6"]
+size = Vector3(0.3110, 0.2960, 0.1750)
+
+[sub_resource type="BoxShape3D" id="box13_7"]
+size = Vector3(0.3180, 0.2960, 0.1590)
+
+[sub_resource type="BoxShape3D" id="box13_8"]
+size = Vector3(0.4530, 0.4580, 0.4100)
+
+[sub_resource type="BoxShape3D" id="box13_9"]
+size = Vector3(0.3500, 0.6000, 0.2410)
+
+[sub_resource type="BoxShape3D" id="box13_10"]
+size = Vector3(0.2760, 0.4400, 0.1620)
+
+[sub_resource type="BoxShape3D" id="box13_11"]
+size = Vector3(0.3940, 0.3990, 0.2630)
+
+[sub_resource type="BoxShape3D" id="box13_12"]
+size = Vector3(0.2040, 0.2240, 0.2630)
+
+[sub_resource type="BoxShape3D" id="box13_13"]
+size = Vector3(0.1820, 0.6400, 0.1320)
+
+[sub_resource type="BoxShape3D" id="box13_14"]
+size = Vector3(0.1830, 0.6400, 0.1330)
+
+[sub_resource type="BoxShape3D" id="box13_15"]
+size = Vector3(0.1890, 0.0800, 0.3080)
+
+[sub_resource type="BoxShape3D" id="box14"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box14_1"]
+size = Vector3(0.2440, 0.3800, 0.2930)
+
+[sub_resource type="BoxShape3D" id="box14_2"]
+size = Vector3(0.3070, 0.2960, 0.1810)
+
+[sub_resource type="BoxShape3D" id="box14_3"]
+size = Vector3(0.6750, 0.1060, 0.4880)
+
+[sub_resource type="BoxShape3D" id="box14_4"]
+size = Vector3(0.3200, 0.2960, 0.1500)
+
+[sub_resource type="BoxShape3D" id="box14_5"]
+size = Vector3(0.6750, 0.0760, 0.4470)
+
+[sub_resource type="BoxShape3D" id="box14_6"]
+size = Vector3(0.3170, 0.2960, 0.1600)
+
+[sub_resource type="BoxShape3D" id="box14_7"]
+size = Vector3(0.3110, 0.2960, 0.1750)
+
+[sub_resource type="BoxShape3D" id="box14_8"]
+size = Vector3(0.4530, 0.4580, 0.4070)
+
+[sub_resource type="BoxShape3D" id="box14_9"]
+size = Vector3(0.3500, 0.6000, 0.2410)
+
+[sub_resource type="BoxShape3D" id="box14_10"]
+size = Vector3(0.3940, 0.3990, 0.2620)
+
+[sub_resource type="BoxShape3D" id="box14_11"]
+size = Vector3(0.2040, 0.2240, 0.2620)
+
+[sub_resource type="BoxShape3D" id="box14_12"]
+size = Vector3(0.1820, 0.6400, 0.1320)
+
+[sub_resource type="BoxShape3D" id="box14_13"]
+size = Vector3(0.1820, 0.6400, 0.1330)
+
+[sub_resource type="BoxShape3D" id="box14_14"]
+size = Vector3(0.2760, 0.4400, 0.1620)
+
+[sub_resource type="BoxShape3D" id="box14_15"]
+size = Vector3(0.1890, 0.0800, 0.3080)
+
+[sub_resource type="BoxShape3D" id="box15"]
+size = Vector3(0.0470, 2.6500, 0.0450)
+
+[sub_resource type="BoxShape3D" id="box15_1"]
+size = Vector3(0.2920, 0.3800, 0.2440)
+
+[sub_resource type="BoxShape3D" id="box15_2"]
+size = Vector3(0.1500, 0.2960, 0.3200)
+
+[sub_resource type="BoxShape3D" id="box15_3"]
+size = Vector3(0.4870, 0.1060, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box15_4"]
+size = Vector3(0.1810, 0.2960, 0.3070)
+
+[sub_resource type="BoxShape3D" id="box15_5"]
+size = Vector3(0.4470, 0.0760, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box15_6"]
+size = Vector3(0.1750, 0.2960, 0.3110)
+
+[sub_resource type="BoxShape3D" id="box15_7"]
+size = Vector3(0.1590, 0.2960, 0.3180)
+
+[sub_resource type="BoxShape3D" id="box15_8"]
+size = Vector3(0.4100, 0.4580, 0.4530)
+
+[sub_resource type="BoxShape3D" id="box15_9"]
+size = Vector3(0.2410, 0.6000, 0.3500)
+
+[sub_resource type="BoxShape3D" id="box15_10"]
+size = Vector3(0.1620, 0.4400, 0.2760)
+
+[sub_resource type="BoxShape3D" id="box15_11"]
+size = Vector3(0.2630, 0.3990, 0.3940)
+
+[sub_resource type="BoxShape3D" id="box15_12"]
+size = Vector3(0.2630, 0.2240, 0.2040)
+
+[sub_resource type="BoxShape3D" id="box15_13"]
+size = Vector3(0.1320, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box15_14"]
+size = Vector3(0.1330, 0.6400, 0.1830)
+
+[sub_resource type="BoxShape3D" id="box15_15"]
+size = Vector3(0.3080, 0.0800, 0.1890)
+
+[sub_resource type="BoxShape3D" id="box16"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box16_1"]
+size = Vector3(0.2930, 0.3800, 0.2440)
+
+[sub_resource type="BoxShape3D" id="box16_2"]
+size = Vector3(0.1810, 0.2960, 0.3070)
+
+[sub_resource type="BoxShape3D" id="box16_3"]
+size = Vector3(0.4880, 0.1060, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box16_4"]
+size = Vector3(0.1500, 0.2960, 0.3200)
+
+[sub_resource type="BoxShape3D" id="box16_5"]
+size = Vector3(0.4470, 0.0760, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box16_6"]
+size = Vector3(0.1600, 0.2960, 0.3170)
+
+[sub_resource type="BoxShape3D" id="box16_7"]
+size = Vector3(0.1750, 0.2960, 0.3110)
+
+[sub_resource type="BoxShape3D" id="box16_8"]
+size = Vector3(0.4070, 0.4580, 0.4530)
+
+[sub_resource type="BoxShape3D" id="box16_9"]
+size = Vector3(0.2410, 0.6000, 0.3500)
+
+[sub_resource type="BoxShape3D" id="box16_10"]
+size = Vector3(0.2620, 0.3990, 0.3940)
+
+[sub_resource type="BoxShape3D" id="box16_11"]
+size = Vector3(0.2620, 0.2240, 0.2040)
+
+[sub_resource type="BoxShape3D" id="box16_12"]
+size = Vector3(0.1320, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box16_13"]
+size = Vector3(0.1330, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box16_14"]
+size = Vector3(0.1620, 0.4400, 0.2760)
+
+[sub_resource type="BoxShape3D" id="box16_15"]
+size = Vector3(0.3080, 0.0800, 0.1890)
+
+[sub_resource type="BoxShape3D" id="box17"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box17_1"]
+size = Vector3(0.2440, 0.3800, 0.2920)
+
+[sub_resource type="BoxShape3D" id="box17_2"]
+size = Vector3(0.3200, 0.2960, 0.1500)
+
+[sub_resource type="BoxShape3D" id="box17_3"]
+size = Vector3(0.6750, 0.1060, 0.4870)
+
+[sub_resource type="BoxShape3D" id="box17_4"]
+size = Vector3(0.3070, 0.2960, 0.1810)
+
+[sub_resource type="BoxShape3D" id="box17_5"]
+size = Vector3(0.6750, 0.0760, 0.4470)
+
+[sub_resource type="BoxShape3D" id="box17_6"]
+size = Vector3(0.3110, 0.2960, 0.1750)
+
+[sub_resource type="BoxShape3D" id="box17_7"]
+size = Vector3(0.3180, 0.2960, 0.1590)
+
+[sub_resource type="BoxShape3D" id="box17_8"]
+size = Vector3(0.4530, 0.4580, 0.4100)
+
+[sub_resource type="BoxShape3D" id="box17_9"]
+size = Vector3(0.3500, 0.6000, 0.2410)
+
+[sub_resource type="BoxShape3D" id="box17_10"]
+size = Vector3(0.2760, 0.4400, 0.1620)
+
+[sub_resource type="BoxShape3D" id="box17_11"]
+size = Vector3(0.3940, 0.3990, 0.2630)
+
+[sub_resource type="BoxShape3D" id="box17_12"]
+size = Vector3(0.2040, 0.2240, 0.2630)
+
+[sub_resource type="BoxShape3D" id="box17_13"]
+size = Vector3(0.1820, 0.6400, 0.1320)
+
+[sub_resource type="BoxShape3D" id="box17_14"]
+size = Vector3(0.1830, 0.6400, 0.1330)
+
+[sub_resource type="BoxShape3D" id="box17_15"]
+size = Vector3(0.1890, 0.0800, 0.3080)
+
+[sub_resource type="BoxShape3D" id="box18"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box18_1"]
+size = Vector3(0.2440, 0.3800, 0.2930)
+
+[sub_resource type="BoxShape3D" id="box18_2"]
+size = Vector3(0.3070, 0.2960, 0.1810)
+
+[sub_resource type="BoxShape3D" id="box18_3"]
+size = Vector3(0.6750, 0.1060, 0.4880)
+
+[sub_resource type="BoxShape3D" id="box18_4"]
+size = Vector3(0.3200, 0.2960, 0.1500)
+
+[sub_resource type="BoxShape3D" id="box18_5"]
+size = Vector3(0.6750, 0.0760, 0.4470)
+
+[sub_resource type="BoxShape3D" id="box18_6"]
+size = Vector3(0.3170, 0.2960, 0.1600)
+
+[sub_resource type="BoxShape3D" id="box18_7"]
+size = Vector3(0.3110, 0.2960, 0.1750)
+
+[sub_resource type="BoxShape3D" id="box18_8"]
+size = Vector3(0.4530, 0.4580, 0.4070)
+
+[sub_resource type="BoxShape3D" id="box18_9"]
+size = Vector3(0.3500, 0.6000, 0.2410)
+
+[sub_resource type="BoxShape3D" id="box18_10"]
+size = Vector3(0.3940, 0.3990, 0.2620)
+
+[sub_resource type="BoxShape3D" id="box18_11"]
+size = Vector3(0.2040, 0.2240, 0.2620)
+
+[sub_resource type="BoxShape3D" id="box18_12"]
+size = Vector3(0.1820, 0.6400, 0.1320)
+
+[sub_resource type="BoxShape3D" id="box18_13"]
+size = Vector3(0.1820, 0.6400, 0.1330)
+
+[sub_resource type="BoxShape3D" id="box18_14"]
+size = Vector3(0.2760, 0.4400, 0.1620)
+
+[sub_resource type="BoxShape3D" id="box18_15"]
+size = Vector3(0.1890, 0.0800, 0.3080)
+
+[sub_resource type="BoxShape3D" id="box19"]
+size = Vector3(0.0470, 2.6500, 0.0460)
+
+[sub_resource type="BoxShape3D" id="box19_1"]
+size = Vector3(0.2920, 0.3800, 0.2440)
+
+[sub_resource type="BoxShape3D" id="box19_2"]
+size = Vector3(0.1500, 0.2960, 0.3200)
+
+[sub_resource type="BoxShape3D" id="box19_3"]
+size = Vector3(0.4870, 0.1060, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box19_4"]
+size = Vector3(0.1810, 0.2960, 0.3070)
+
+[sub_resource type="BoxShape3D" id="box19_5"]
+size = Vector3(0.4470, 0.0760, 0.6750)
+
+[sub_resource type="BoxShape3D" id="box19_6"]
+size = Vector3(0.1750, 0.2960, 0.3110)
+
+[sub_resource type="BoxShape3D" id="box19_7"]
+size = Vector3(0.1590, 0.2960, 0.3180)
+
+[sub_resource type="BoxShape3D" id="box19_8"]
+size = Vector3(0.4100, 0.4580, 0.4530)
+
+[sub_resource type="BoxShape3D" id="box19_9"]
+size = Vector3(0.2410, 0.6000, 0.3500)
+
+[sub_resource type="BoxShape3D" id="box19_10"]
+size = Vector3(0.1620, 0.4400, 0.2760)
+
+[sub_resource type="BoxShape3D" id="box19_11"]
+size = Vector3(0.2630, 0.3990, 0.3940)
+
+[sub_resource type="BoxShape3D" id="box19_12"]
+size = Vector3(0.2630, 0.2240, 0.2040)
+
+[sub_resource type="BoxShape3D" id="box19_13"]
+size = Vector3(0.1320, 0.6400, 0.1820)
+
+[sub_resource type="BoxShape3D" id="box19_14"]
+size = Vector3(0.1330, 0.6400, 0.1830)
+
+[sub_resource type="BoxShape3D" id="box19_15"]
+size = Vector3(0.3080, 0.0800, 0.1890)
+
+[node name="carousel" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+run = "turn"
+lit = PackedStringArray("carousel_bulbs")
+
+[node name="Collision" type="StaticBody3D" parent="carousel"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4100, 0.1700, -0.0000)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7185, 0.1700, -2.8545)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8545, 0.1700, -3.7185)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.1700, -4.4100)
+shape = SubResource("box0_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8545, 0.1700, -3.7185)
+shape = SubResource("box0_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7185, 0.1700, -2.8545)
+shape = SubResource("box0_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4100, 0.1700, -0.0000)
+shape = SubResource("box0_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7185, 0.1700, 2.8545)
+shape = SubResource("box0_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8545, 0.1700, 3.7185)
+shape = SubResource("box0_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7955, 0.1700, 4.3290)
+shape = SubResource("box0_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.1700, 4.6450)
+shape = SubResource("box0_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7955, 0.1700, 4.3290)
+shape = SubResource("box0_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8545, 0.1700, 3.7185)
+shape = SubResource("box0_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7185, 0.1700, 2.8545)
+shape = SubResource("box0_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.3000, -0.0000)
+shape = SubResource("box0_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, -0.0000)
+shape = SubResource("box0_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_centre"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7000, 1.6300, -0.0000)
+shape = SubResource("box1")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5125, 1.6250, -0.5125)
+shape = SubResource("box1_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.6250, -0.7000)
+shape = SubResource("box1_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5125, 1.6250, -0.5125)
+shape = SubResource("box1_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7000, 1.6300, -0.0000)
+shape = SubResource("box1_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5125, 1.6250, 0.5125)
+shape = SubResource("box1_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.6250, 0.7000)
+shape = SubResource("box1_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5125, 1.6250, 0.5125)
+shape = SubResource("box1_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.9500, -0.0000)
+shape = SubResource("box1_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.2990, -0.0000)
+shape = SubResource("box1_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7930, 0.4040, -0.0000)
+shape = SubResource("box1_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.3990, -0.6375)
+shape = SubResource("box1_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7930, 0.4040, -0.0000)
+shape = SubResource("box1_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.3990, 0.5805)
+shape = SubResource("box1_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.3990, 0.7930)
+shape = SubResource("box1_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_centre/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.5000, -0.0000)
+shape = SubResource("box1_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 4.6250, -0.0000)
+shape = SubResource("box2")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_bulbs"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_bulbs/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 3.2500, -0.0000)
+shape = SubResource("box3")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_1"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_1/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6000, 1.6250, -0.0439)
+shape = SubResource("box4")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_2"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5455, 1.6250, -2.5480)
+shape = SubResource("box5")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8815, 1.2500, -2.2100)
+shape = SubResource("box5_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6320, 1.2500, -2.2665)
+shape = SubResource("box5_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6140, 1.4370, -2.4775)
+shape = SubResource("box5_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8250, 1.2500, -2.4595)
+shape = SubResource("box5_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6140, 1.0780, -2.4775)
+shape = SubResource("box5_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4040, 1.2500, -2.4880)
+shape = SubResource("box5_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6035, 1.2500, -2.6870)
+shape = SubResource("box5_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2700, 1.2210, -2.8195)
+shape = SubResource("box5_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1995, 1.5900, -2.8925)
+shape = SubResource("box5_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0430, 1.5535, -3.0480)
+shape = SubResource("box5_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1615, 0.9300, -2.9255)
+shape = SubResource("box5_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9105, 0.8430, -2.3025)
+shape = SubResource("box5_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7835, 0.8430, -2.1755)
+shape = SubResource("box5_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0155, 1.1000, -2.0755)
+shape = SubResource("box5_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_2/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4605, 1.5100, -2.6305)
+shape = SubResource("box5_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_3"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_3/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0439, 1.6250, -3.6000)
+shape = SubResource("box6")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_4"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5455, 1.6250, -2.5480)
+shape = SubResource("box7")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2100, 1.2500, -2.8815)
+shape = SubResource("box7_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2665, 1.2500, -2.6320)
+shape = SubResource("box7_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4775, 1.4370, -2.6140)
+shape = SubResource("box7_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4595, 1.2500, -2.8250)
+shape = SubResource("box7_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4775, 1.0780, -2.6140)
+shape = SubResource("box7_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4880, 1.2500, -2.4040)
+shape = SubResource("box7_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6870, 1.2500, -2.6035)
+shape = SubResource("box7_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8195, 1.2210, -2.2700)
+shape = SubResource("box7_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8925, 1.5900, -2.1995)
+shape = SubResource("box7_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0480, 1.5535, -2.0430)
+shape = SubResource("box7_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9255, 0.9300, -2.1615)
+shape = SubResource("box7_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3025, 0.8430, -2.9105)
+shape = SubResource("box7_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1755, 0.8430, -2.7835)
+shape = SubResource("box7_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0755, 1.1000, -3.0155)
+shape = SubResource("box7_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_4/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6305, 1.5100, -2.4605)
+shape = SubResource("box7_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_5"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_5/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6000, 1.6250, 0.0439)
+shape = SubResource("box8")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_6"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5455, 1.6250, 2.5435)
+shape = SubResource("box9")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8815, 1.2500, 2.2100)
+shape = SubResource("box9_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6320, 1.2500, 2.2665)
+shape = SubResource("box9_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6140, 1.4370, 2.4775)
+shape = SubResource("box9_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8250, 1.2500, 2.4595)
+shape = SubResource("box9_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6140, 1.0780, 2.4775)
+shape = SubResource("box9_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4040, 1.2500, 2.4880)
+shape = SubResource("box9_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6035, 1.2500, 2.6870)
+shape = SubResource("box9_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2700, 1.2210, 2.8195)
+shape = SubResource("box9_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1995, 1.5900, 2.8925)
+shape = SubResource("box9_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0430, 1.5535, 3.0480)
+shape = SubResource("box9_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1615, 0.9300, 2.9255)
+shape = SubResource("box9_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9105, 0.8430, 2.3025)
+shape = SubResource("box9_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7835, 0.8430, 2.1755)
+shape = SubResource("box9_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0155, 1.1000, 2.0755)
+shape = SubResource("box9_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_6/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4605, 1.5100, 2.6305)
+shape = SubResource("box9_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_7"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_7/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0439, 1.6250, 3.6000)
+shape = SubResource("box10")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_8"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5455, 1.6250, 2.5435)
+shape = SubResource("box11")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2100, 1.2500, 2.8815)
+shape = SubResource("box11_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2665, 1.2500, 2.6320)
+shape = SubResource("box11_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4775, 1.4370, 2.6140)
+shape = SubResource("box11_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4595, 1.2500, 2.8250)
+shape = SubResource("box11_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4775, 1.0780, 2.6140)
+shape = SubResource("box11_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4880, 1.2500, 2.4040)
+shape = SubResource("box11_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6870, 1.2500, 2.6035)
+shape = SubResource("box11_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8195, 1.2210, 2.2700)
+shape = SubResource("box11_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8925, 1.5900, 2.1995)
+shape = SubResource("box11_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0480, 1.5535, 2.0430)
+shape = SubResource("box11_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9255, 0.9300, 2.1615)
+shape = SubResource("box11_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3025, 0.8430, 2.9105)
+shape = SubResource("box11_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1755, 0.8430, 2.7835)
+shape = SubResource("box11_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0755, 1.1000, 3.0155)
+shape = SubResource("box11_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_8/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6305, 1.5100, 2.4605)
+shape = SubResource("box11_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_9"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2175, 1.6250, -0.9205)
+shape = SubResource("box12")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3855, 1.2500, -0.4660)
+shape = SubResource("box12_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1895, 1.2500, -0.6265)
+shape = SubResource("box12_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2320, 1.4370, -0.8275)
+shape = SubResource("box12_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4420, 1.2500, -0.7310)
+shape = SubResource("box12_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2525, 1.0780, -0.8275)
+shape = SubResource("box12_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0650, 1.2500, -0.9195)
+shape = SubResource("box12_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3255, 1.2500, -1.0275)
+shape = SubResource("box12_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0775, 1.2210, -1.2865)
+shape = SubResource("box12_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0295, 1.5900, -1.3710)
+shape = SubResource("box12_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9480, 1.5535, -1.5780)
+shape = SubResource("box12_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0100, 0.9300, -1.4190)
+shape = SubResource("box12_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4640, 0.8430, -0.5590)
+shape = SubResource("box12_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2975, 0.8430, -0.4900)
+shape = SubResource("box12_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4720, 1.1000, -0.3040)
+shape = SubResource("box12_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_9/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1710, 1.5100, -1.0295)
+shape = SubResource("box12_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_10"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9185, 1.6250, -2.2195)
+shape = SubResource("box13")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3710, 1.2500, -2.0490)
+shape = SubResource("box13_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1060, 1.2500, -1.9930)
+shape = SubResource("box13_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0095, 1.4370, -2.2025)
+shape = SubResource("box13_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2105, 1.2500, -2.2455)
+shape = SubResource("box13_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0095, 1.0780, -2.1825)
+shape = SubResource("box13_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8095, 1.2500, -2.1095)
+shape = SubResource("box13_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9170, 1.2500, -2.3695)
+shape = SubResource("box13_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5495, 1.2210, -2.3590)
+shape = SubResource("box13_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4660, 1.5900, -2.4045)
+shape = SubResource("box13_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5330, 1.1000, -1.9630)
+shape = SubResource("box13_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2590, 1.5535, -2.4865)
+shape = SubResource("box13_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4220, 0.9300, -2.4235)
+shape = SubResource("box13_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3530, 0.8430, -2.1350)
+shape = SubResource("box13_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2845, 0.8430, -1.9685)
+shape = SubResource("box13_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_10/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8075, 1.5100, -2.2630)
+shape = SubResource("box13_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_11"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9185, 1.6250, -2.2195)
+shape = SubResource("box14")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4660, 1.2500, -2.3855)
+shape = SubResource("box14_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6265, 1.2500, -2.1895)
+shape = SubResource("box14_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8275, 1.4370, -2.2320)
+shape = SubResource("box14_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7310, 1.2500, -2.4420)
+shape = SubResource("box14_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8275, 1.0780, -2.2525)
+shape = SubResource("box14_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9195, 1.2500, -2.0650)
+shape = SubResource("box14_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0275, 1.2500, -2.3255)
+shape = SubResource("box14_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2865, 1.2210, -2.0775)
+shape = SubResource("box14_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3710, 1.5900, -2.0295)
+shape = SubResource("box14_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5780, 1.5535, -1.9480)
+shape = SubResource("box14_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4190, 0.9300, -2.0100)
+shape = SubResource("box14_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5590, 0.8430, -2.4640)
+shape = SubResource("box14_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4900, 0.8430, -2.2975)
+shape = SubResource("box14_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3040, 1.1000, -2.4720)
+shape = SubResource("box14_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_11/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0295, 1.5100, -2.1710)
+shape = SubResource("box14_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_12"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2175, 1.6250, -0.9205)
+shape = SubResource("box15")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0490, 1.2500, -1.3710)
+shape = SubResource("box15_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9930, 1.2500, -1.1060)
+shape = SubResource("box15_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2025, 1.4370, -1.0095)
+shape = SubResource("box15_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2455, 1.2500, -1.2105)
+shape = SubResource("box15_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1825, 1.0780, -1.0095)
+shape = SubResource("box15_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1095, 1.2500, -0.8095)
+shape = SubResource("box15_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3695, 1.2500, -0.9170)
+shape = SubResource("box15_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3590, 1.2210, -0.5495)
+shape = SubResource("box15_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4045, 1.5900, -0.4660)
+shape = SubResource("box15_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9630, 1.1000, -1.5330)
+shape = SubResource("box15_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4865, 1.5535, -0.2590)
+shape = SubResource("box15_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4235, 0.9300, -0.4220)
+shape = SubResource("box15_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1350, 0.8430, -1.3530)
+shape = SubResource("box15_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9685, 0.8430, -1.2845)
+shape = SubResource("box15_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_12/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2630, 1.5100, -0.8075)
+shape = SubResource("box15_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_13"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2175, 1.6250, 0.9160)
+shape = SubResource("box16")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3855, 1.2500, 0.4660)
+shape = SubResource("box16_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1895, 1.2500, 0.6265)
+shape = SubResource("box16_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2320, 1.4370, 0.8275)
+shape = SubResource("box16_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4420, 1.2500, 0.7310)
+shape = SubResource("box16_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2525, 1.0780, 0.8275)
+shape = SubResource("box16_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0650, 1.2500, 0.9195)
+shape = SubResource("box16_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3255, 1.2500, 1.0275)
+shape = SubResource("box16_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0775, 1.2210, 1.2865)
+shape = SubResource("box16_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0295, 1.5900, 1.3710)
+shape = SubResource("box16_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9480, 1.5535, 1.5780)
+shape = SubResource("box16_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0100, 0.9300, 1.4190)
+shape = SubResource("box16_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4640, 0.8430, 0.5590)
+shape = SubResource("box16_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2975, 0.8430, 0.4900)
+shape = SubResource("box16_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4720, 1.1000, 0.3040)
+shape = SubResource("box16_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_13/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1710, 1.5100, 1.0295)
+shape = SubResource("box16_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_14"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9185, 1.6250, 2.2150)
+shape = SubResource("box17")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3710, 1.2500, 2.0490)
+shape = SubResource("box17_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1060, 1.2500, 1.9930)
+shape = SubResource("box17_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0095, 1.4370, 2.2025)
+shape = SubResource("box17_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2105, 1.2500, 2.2455)
+shape = SubResource("box17_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0095, 1.0780, 2.1825)
+shape = SubResource("box17_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8095, 1.2500, 2.1095)
+shape = SubResource("box17_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9170, 1.2500, 2.3695)
+shape = SubResource("box17_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5495, 1.2210, 2.3590)
+shape = SubResource("box17_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4660, 1.5900, 2.4045)
+shape = SubResource("box17_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5330, 1.1000, 1.9630)
+shape = SubResource("box17_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2590, 1.5535, 2.4865)
+shape = SubResource("box17_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4220, 0.9300, 2.4235)
+shape = SubResource("box17_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3530, 0.8430, 2.1350)
+shape = SubResource("box17_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2845, 0.8430, 1.9685)
+shape = SubResource("box17_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_14/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8075, 1.5100, 2.2630)
+shape = SubResource("box17_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_15"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9185, 1.6250, 2.2150)
+shape = SubResource("box18")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4660, 1.2500, 2.3855)
+shape = SubResource("box18_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6265, 1.2500, 2.1895)
+shape = SubResource("box18_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8275, 1.4370, 2.2320)
+shape = SubResource("box18_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7310, 1.2500, 2.4420)
+shape = SubResource("box18_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8275, 1.0780, 2.2525)
+shape = SubResource("box18_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9195, 1.2500, 2.0650)
+shape = SubResource("box18_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0275, 1.2500, 2.3255)
+shape = SubResource("box18_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2865, 1.2210, 2.0775)
+shape = SubResource("box18_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3710, 1.5900, 2.0295)
+shape = SubResource("box18_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5780, 1.5535, 1.9480)
+shape = SubResource("box18_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4190, 0.9300, 2.0100)
+shape = SubResource("box18_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5590, 0.8430, 2.4640)
+shape = SubResource("box18_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4900, 0.8430, 2.2975)
+shape = SubResource("box18_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3040, 1.1000, 2.4720)
+shape = SubResource("box18_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_15/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0295, 1.5100, 2.1710)
+shape = SubResource("box18_15")
+
+[node name="Collision" type="StaticBody3D" parent="carousel/carousel_canopy/carousel_horse_16"]
+
+[node name="Box" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2175, 1.6250, 0.9160)
+shape = SubResource("box19")
+
+[node name="Box2" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0490, 1.2500, 1.3710)
+shape = SubResource("box19_1")
+
+[node name="Box3" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9930, 1.2500, 1.1060)
+shape = SubResource("box19_2")
+
+[node name="Box4" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2025, 1.4370, 1.0095)
+shape = SubResource("box19_3")
+
+[node name="Box5" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2455, 1.2500, 1.2105)
+shape = SubResource("box19_4")
+
+[node name="Box6" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1825, 1.0780, 1.0095)
+shape = SubResource("box19_5")
+
+[node name="Box7" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1095, 1.2500, 0.8095)
+shape = SubResource("box19_6")
+
+[node name="Box8" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3695, 1.2500, 0.9170)
+shape = SubResource("box19_7")
+
+[node name="Box9" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3590, 1.2210, 0.5495)
+shape = SubResource("box19_8")
+
+[node name="Box10" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4045, 1.5900, 0.4660)
+shape = SubResource("box19_9")
+
+[node name="Box11" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9630, 1.1000, 1.5330)
+shape = SubResource("box19_10")
+
+[node name="Box12" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4865, 1.5535, 0.2590)
+shape = SubResource("box19_11")
+
+[node name="Box13" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4235, 0.9300, 0.4220)
+shape = SubResource("box19_12")
+
+[node name="Box14" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1350, 0.8430, 1.3530)
+shape = SubResource("box19_13")
+
+[node name="Box15" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9685, 0.8430, 1.2845)
+shape = SubResource("box19_14")
+
+[node name="Box16" type="CollisionShape3D" parent="carousel/carousel_canopy/carousel_horse_16/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2630, 1.5100, 0.8075)
+shape = SubResource("box19_15")

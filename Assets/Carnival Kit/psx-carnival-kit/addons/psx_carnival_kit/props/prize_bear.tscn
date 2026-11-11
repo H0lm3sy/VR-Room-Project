@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/prize_bear_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.2954, 0.4285, 0.2653)
+
+[node name="prize_bear" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="prize_bear"]
+
+[node name="Box" type="CollisionShape3D" parent="prize_bear/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.2077, 0.0226)
+shape = SubResource("box0")

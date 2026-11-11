@@ -1,0 +1,170 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/cotton_candy_cart_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(1.4000, 0.7000, 0.8000)
+
+[sub_resource type="BoxShape3D" id="box0_1"]
+size = Vector3(1.5000, 0.0500, 0.9000)
+
+[sub_resource type="BoxShape3D" id="box0_2"]
+size = Vector3(0.7000, 0.2980, 0.7000)
+
+[sub_resource type="BoxShape3D" id="box0_3"]
+size = Vector3(0.0360, 0.2500, 0.0380)
+
+[sub_resource type="BoxShape3D" id="box0_4"]
+size = Vector3(0.1560, 0.2340, 0.1350)
+
+[sub_resource type="BoxShape3D" id="box0_5"]
+size = Vector3(0.0360, 0.2500, 0.0380)
+
+[sub_resource type="BoxShape3D" id="box0_6"]
+size = Vector3(0.3160, 0.2340, 0.1340)
+
+[sub_resource type="BoxShape3D" id="box0_7"]
+size = Vector3(0.0360, 0.2500, 0.0380)
+
+[sub_resource type="BoxShape3D" id="box0_8"]
+size = Vector3(0.1560, 0.2340, 0.1350)
+
+[sub_resource type="BoxShape3D" id="box0_9"]
+size = Vector3(0.0360, 0.2500, 0.0380)
+
+[sub_resource type="BoxShape3D" id="box0_10"]
+size = Vector3(0.0360, 0.2500, 0.0380)
+
+[sub_resource type="BoxShape3D" id="box0_11"]
+size = Vector3(0.1560, 0.2340, 0.1350)
+
+[sub_resource type="BoxShape3D" id="box0_12"]
+size = Vector3(0.5000, 0.4760, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box0_13"]
+size = Vector3(0.5000, 0.4760, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box0_14"]
+size = Vector3(0.4140, 0.1880, 0.0400)
+
+[sub_resource type="BoxShape3D" id="box0_15"]
+size = Vector3(0.0540, 0.2500, 0.0580)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0300, 1.0000, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box1_1"]
+size = Vector3(0.0300, 1.0000, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box1_2"]
+size = Vector3(0.0300, 1.0000, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box1_3"]
+size = Vector3(0.0300, 1.0000, 0.0300)
+
+[sub_resource type="BoxShape3D" id="box1_4"]
+size = Vector3(1.7560, 0.2500, 1.7560)
+
+[sub_resource type="BoxShape3D" id="box1_5"]
+size = Vector3(1.7560, 0.2500, 1.7560)
+
+[sub_resource type="BoxShape3D" id="box1_6"]
+size = Vector3(1.0000, 0.2500, 0.0300)
+
+[node name="cotton_candy_cart" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="cotton_candy_cart"]
+
+[node name="Box" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.6000, -0.0000)
+shape = SubResource("box0")
+
+[node name="Box2" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.9700, -0.0000)
+shape = SubResource("box0_1")
+
+[node name="Box3" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2500, 1.1390, -0.0000)
+shape = SubResource("box0_2")
+
+[node name="Box4" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2520, 1.1250, 0.1500)
+shape = SubResource("box0_3")
+
+[node name="Box5" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2500, 1.3200, 0.1495)
+shape = SubResource("box0_4")
+
+[node name="Box6" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3320, 1.1250, -0.1500)
+shape = SubResource("box0_5")
+
+[node name="Box7" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4100, 1.3200, -0.1500)
+shape = SubResource("box0_6")
+
+[node name="Box8" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4120, 1.1250, 0.1500)
+shape = SubResource("box0_7")
+
+[node name="Box9" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4100, 1.3200, 0.1495)
+shape = SubResource("box0_8")
+
+[node name="Box10" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4920, 1.1250, -0.1500)
+shape = SubResource("box0_9")
+
+[node name="Box11" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5720, 1.1250, 0.1500)
+shape = SubResource("box0_10")
+
+[node name="Box12" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5700, 1.3200, 0.1495)
+shape = SubResource("box0_11")
+
+[node name="Box13" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4500, 0.2500, 0.4600)
+shape = SubResource("box0_12")
+
+[node name="Box14" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4500, 0.2500, -0.4600)
+shape = SubResource("box0_13")
+
+[node name="Box15" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9000, 0.6750, -0.0000)
+shape = SubResource("box0_14")
+
+[node name="Box16" type="CollisionShape3D" parent="cotton_candy_cart/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5530, 0.1250, -0.0000)
+shape = SubResource("box0_15")
+
+[node name="Collision" type="StaticBody3D" parent="cotton_candy_cart/cotton_candy_cart_canopy"]
+
+[node name="Box" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6500, 1.5000, 0.3500)
+shape = SubResource("box1")
+
+[node name="Box2" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6500, 1.5000, -0.3500)
+shape = SubResource("box1_1")
+
+[node name="Box3" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6500, 1.5000, 0.3500)
+shape = SubResource("box1_2")
+
+[node name="Box4" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6500, 1.5000, -0.3500)
+shape = SubResource("box1_3")
+
+[node name="Box5" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.1250, -0.0000)
+shape = SubResource("box1_4")
+
+[node name="Box6" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.1150, -0.0000)
+shape = SubResource("box1_5")
+
+[node name="Box7" type="CollisionShape3D" parent="cotton_candy_cart/cotton_candy_cart_canopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.8800, 0.4200)
+shape = SubResource("box1_6")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_carnival_kit/models/barrel_tunnel_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_carnival_kit/machine.gd" id="2"]
+
+[node name="barrel_tunnel" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+run = "spin"
