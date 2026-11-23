@@ -5,6 +5,9 @@ public class BottleScript : MonoBehaviour
     public float tipAngle = 45f;      // how far it must lean to count as knocked over
     public float dropDistance = 0.3f; // how far below its strt height counts as fallen off
 
+    public AudioSource audioSource;
+    public AudioClip clang;
+
     BoothGameBottle booth;
     float startY;
     bool counted = false;
@@ -25,6 +28,8 @@ public class BottleScript : MonoBehaviour
         if (angle > tipAngle || fellOff)
         {
             counted = true;
+            if (audioSource != null && clang != null)
+                audioSource.PlayOneShot(clang);
             booth.AddScore(1);
         }
     }
